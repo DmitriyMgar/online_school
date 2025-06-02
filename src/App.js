@@ -10,6 +10,8 @@ import Footer from './components/Footer';
 // Страницы
 import HomePage from './pages/HomePage';
 import CoursePage from './pages/CoursePage';
+import CoursesPage from './pages/CoursesPage';
+import AboutPage from './pages/AboutPage';
 import ProfilePage from './pages/ProfilePage';
 import NotFoundPage from './pages/NotFoundPage';
 
@@ -27,7 +29,9 @@ function App() {
           <AnimatePresence mode="wait">
             <Routes>
               <Route path="/" element={<HomePage />} />
+              <Route path="/courses" element={<CoursesPage />} />
               <Route path="/course/:id" element={<CoursePage />} />
+              <Route path="/about" element={<AboutPage />} />
               <Route path="/profile" element={<ProfilePage />} />
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
