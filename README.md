@@ -27,5 +27,18 @@ npm start
 npm run build
 ```
 
-## Деплой
-Проект настроен для деплоя на Netlify. 
+## Деплой на Netlify
+
+### Вариант 1: Деплой через интерфейс Netlify
+1. Зарегистрируйтесь или войдите на [Netlify](https://www.netlify.com/)
+2. Нажмите на кнопку "Add new site" -> "Import an existing project"
+3. Выберите репозиторий с проектом (GitHub, GitLab, Bitbucket)
+4. Настройки сборки автоматически определятся из файла `netlify.toml`
+5. Нажмите "Deploy site"
+
+### Вариант 2: Деплой через CLI Netlify
+1. Установите Netlify CLI: `npm install netlify-cli -g`
+2. Войдите в аккаунт: `netlify login`
+3. Запустите: `netlify deploy`
+4. Следуйте инструкциям в терминале
+5. Для production деплоя: `netlify deploy --prod` 
